@@ -185,7 +185,6 @@ function Home() {
     data?.results.find(
       (movie) => movie.id + "" === bigMovieMatch?.params.movieId
     );
-  console.log(clickedMovie);
   return (
     <Wrapper>
       {isLoading ? (
@@ -207,7 +206,7 @@ function Home() {
                 }}
                 animate={{ x: 0 }}
                 exit={{ x: -width - 10 }}
-                transition={{ type: "tween", duration: 5 }}
+                transition={{ type: "tween", duration: 2 }}
                 key={index}
               >
                 {data?.results
